@@ -17,8 +17,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    std::string get_state(void)const{return state;}
-    std::string get_range(void)const{return range;}
+    QString get_state(void)const{return state;}
+    QString get_range(void)const{return range;}
 
 private slots:
     void on_pushButtonTemp_clicked();
@@ -37,8 +37,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    std::string state="temp";
-    std::string range="hour";
+    QString state="temp";
+    QString range="hour";
 
 };
 #endif // MAINWINDOW_H
