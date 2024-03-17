@@ -30,3 +30,27 @@ void MainWindow::on_pushButtonLight_clicked()
     state="light";
 }
 
+
+void MainWindow::on_pushButtonHour_clicked()
+{
+    range="hour";
+}
+
+
+void MainWindow::on_pushButtonDay_clicked()
+{
+    range="day";
+}
+
+
+void MainWindow::on_pushButtonWeek_clicked()
+{
+    range="week";
+}
+
+
+void MainWindow::on_pushButtonMonth_clicked()
+{
+    range="month";
+}
+

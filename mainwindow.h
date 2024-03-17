@@ -18,6 +18,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     std::string get_state(void)const{return state;}
+    std::string get_range(void)const{return range;}
 
 private slots:
     void on_pushButtonTemp_clicked();
@@ -26,9 +27,18 @@ private slots:
 
     void on_pushButtonLight_clicked();
 
+    void on_pushButtonHour_clicked();
+
+    void on_pushButtonDay_clicked();
+
+    void on_pushButtonWeek_clicked();
+
+    void on_pushButtonMonth_clicked();
+
 private:
     Ui::MainWindow *ui;
     std::string state="temp";
+    std::string range="hour";
 
 };
 #endif // MAINWINDOW_H
