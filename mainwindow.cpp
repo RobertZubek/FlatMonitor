@@ -18,3 +18,15 @@ void MainWindow::on_pushButtonTemp_clicked()
     state="temp";
 }
 
+
+void MainWindow::on_pushButtonPress_clicked()
+{
+    state="press";
+}
+
+
+void MainWindow::on_pushButtonLight_clicked()
+{
+    state="light";
+}
+

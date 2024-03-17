@@ -22,6 +22,10 @@ public:
 private slots:
     void on_pushButtonTemp_clicked();
 
+    void on_pushButtonPress_clicked();
+
+    void on_pushButtonLight_clicked();
+
 private:
     Ui::MainWindow *ui;
     std::string state="temp";
