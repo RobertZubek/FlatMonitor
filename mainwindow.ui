@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Temperature</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonPress">
@@ -37,7 +37,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Pressure</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonLight">
@@ -50,7 +50,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Light</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonHour">
@@ -63,7 +63,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Last hour</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonDay">
@@ -76,7 +76,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Last day</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonWeek">
@@ -89,7 +89,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Last week</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonMonth">
@@ -102,7 +102,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Last month</string>
     </property>
    </widget>
   </widget>
