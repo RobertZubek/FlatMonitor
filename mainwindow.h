@@ -17,9 +17,14 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    std::string get_state(void)const{return state;}
+
+private slots:
+    void on_pushButtonTemp_clicked();
 
 private:
     Ui::MainWindow *ui;
+    std::string state="temp";
 
 };
 #endif // MAINWINDOW_H
