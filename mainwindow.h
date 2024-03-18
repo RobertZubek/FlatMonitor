@@ -42,6 +42,8 @@ private:
     Ui::MainWindow *ui;
     QString state="temp";
     QString range="hour";
+    QChartView *chartView;
+    QChart *chart;
 
 };
 #endif // MAINWINDOW_H
