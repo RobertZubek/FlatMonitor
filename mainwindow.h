@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QSerialPort>
+#include <QtCharts>
+#include <QChartView>
+#include<QLineSeries>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
