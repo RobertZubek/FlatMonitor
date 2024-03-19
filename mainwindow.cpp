@@ -9,33 +9,21 @@ MainWindow::MainWindow(QWidget *parent)
     ui->stateText->setText(state);
     ui->rangeText->setText(range);
 
-    QWidget *centralWidget = new QWidget(this);
-    setCentralWidget(centralWidget);
+    QLineSeries *series = new QLineSeries();
+    series->append(0,0);
+    series->append(1,1);
+    series->append(2,2);
 
-    chartView = new QChartView;
-    chart = new QChart;
-
-    QLineSeries *series = new QLineSeries;
-    series->append(0, 6);
-    series->append(2, 4);
-    series->append(3, 8);
-    series->append(7, 4);
-    series->append(10, 5);
+    QChart *chart = new QChart();
+    chart->legend()->hide();
     chart->addSeries(series);
+    chart->createDefaultAxes();
+    chart->setTitle(state+" "+range);
 
-    QValueAxis *axisX = new QValueAxis;
-    axisX->setTitleText("Oś X");
-    chart->addAxis(axisX, Qt::AlignBottom);
-    series->attachAxis(axisX);
+    chartView = new QChartView();
+    chartView->setRenderHint(QPainter::Antialiasing);
 
-    QValueAxis *axisY = new QValueAxis;
-    axisY->setTitleText("Oś Y");
-    chart->addAxis(axisY, Qt::AlignLeft);
-    series->attachAxis(axisY);
-
-    QVBoxLayout *centralLayout = new QVBoxLayout(ui->centralwidget);
-    centralLayout->addWidget(chartView);
-
+    ui->graphicsView->setChart(chart);
 
 }
 
@@ -48,6 +36,7 @@ void MainWindow::on_pushButtonTemp_clicked()
 {
     state="temp";
     ui->stateText->setText(state);
+    chart->setTitle(state+" "+range);
 
 }
 
@@ -56,6 +45,7 @@ void MainWindow::on_pushButtonPress_clicked()
 {
     state="press";
     ui->stateText->setText(state);
+    chart->setTitle(state+" "+range);
 }
 
 
@@ -63,6 +53,7 @@ void MainWindow::on_pushButtonLight_clicked()
 {
     state="light";
     ui->stateText->setText(state);
+    this->chart->setTitle(state+" "+range);
 }
 
 
@@ -70,6 +61,7 @@ void MainWindow::on_pushButtonHour_clicked()
 {
     range="hour";
     ui->rangeText->setText(range);
+    chart->setTitle(state+" "+range);
 }
 
 
@@ -77,6 +69,7 @@ void MainWindow::on_pushButtonDay_clicked()
 {
     range="day";
     ui->rangeText->setText(range);
+    chart->setTitle(state+" "+range);
 }
 
 
@@ -84,6 +77,7 @@ void MainWindow::on_pushButtonWeek_clicked()
 {
     range="week";
     ui->rangeText->setText(range);
+    chart->setTitle(state+" "+range);
 }
 
 
@@ -91,5 +85,6 @@ void MainWindow::on_pushButtonMonth_clicked()
 {
     range="month";
     ui->rangeText->setText(range);
+    chart->setTitle(state+" "+range);
 }
 

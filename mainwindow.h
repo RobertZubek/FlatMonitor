@@ -44,6 +44,7 @@ private:
     QString range="hour";
     QChartView *chartView;
     QChart *chart;
+    QLineSeries *series;
 
 };
 #endif // MAINWINDOW_H
