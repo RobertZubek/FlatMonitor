@@ -41,8 +41,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QString state="temp";
-    QString range="hour";
+    QString state="temperature";
+    QString range="Last hour";
     QChartView *chartView;
     QChart *chart;
     QLineSeries *series;

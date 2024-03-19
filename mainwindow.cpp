@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
     chart->legend()->hide();
     chart->addSeries(series);
     chart->createDefaultAxes();
-    chart->setTitle(state+" "+range);
+    chart->setTitle(range+" "+state);
 
     chartView = new QChartView();
     chartView->setRenderHint(QPainter::Antialiasing);
