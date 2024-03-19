@@ -22,6 +22,7 @@ public:
     ~MainWindow();
     QString get_state(void)const{return state;}
     QString get_range(void)const{return range;}
+    void make_chart(QLineSeries *series, QString title);
 
 private slots:
     void on_pushButtonTemp_clicked();
