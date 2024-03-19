@@ -36,7 +36,6 @@ void MainWindow::on_pushButtonTemp_clicked()
 {
     state="temp";
     ui->stateText->setText(state);
-    chart->setTitle(state+" "+range);
 
 }
 
@@ -53,7 +52,7 @@ void MainWindow::on_pushButtonLight_clicked()
 {
     state="light";
     ui->stateText->setText(state);
-    this->chart->setTitle(state+" "+range);
+    chart->setTitle(state+" "+range);
 }
 
 
@@ -86,5 +85,10 @@ void MainWindow::on_pushButtonMonth_clicked()
     range="month";
     ui->rangeText->setText(range);
     chart->setTitle(state+" "+range);
+}
+
+void MainWindow::make_chart()
+{
+
 }
 
