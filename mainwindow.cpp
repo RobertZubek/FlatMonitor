@@ -6,8 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    ui->stateText->setText(state);
-    ui->rangeText->setText(range);
+
 
     QLineSeries *series = new QLineSeries();
     series->append(0,0);
@@ -34,16 +33,28 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButtonTemp_clicked()
 {
-    state="temp";
-    ui->stateText->setText(state);
+    state="temperature";
+    QLineSeries *series = new QLineSeries();
+    series->append(0,0);
+    series->append(1,0);
+    series->append(2,5);
+    series->append(3,5);
+    QString title = range+" "+state;
+    make_chart(series, title);
 
 }
 
 
 void MainWindow::on_pushButtonPress_clicked()
 {
-    state="press";
-    ui->stateText->setText(state);
+    state="pressure";
+    QLineSeries *series = new QLineSeries();
+    series->append(0,0);
+    series->append(1,0);
+    series->append(2,5);
+    series->append(3,5);
+    QString title = range+" "+state;
+    make_chart(series, title);
 
 }
 
@@ -51,39 +62,62 @@ void MainWindow::on_pushButtonPress_clicked()
 void MainWindow::on_pushButtonLight_clicked()
 {
     state="light";
-    ui->stateText->setText(state);
+    QLineSeries *series = new QLineSeries();
+    series->append(0,0);
+    series->append(1,0);
+    series->append(2,5);
+    series->append(3,5);
+    QString title = range+" "+state;
+    make_chart(series, title);
 
 }
 
 
 void MainWindow::on_pushButtonHour_clicked()
 {
-    range="hour";
-    ui->rangeText->setText(range);
+    range="Last hour";
+    QLineSeries *series = new QLineSeries();
+    series->append(0,0);
+    series->append(1,0);
+    series->append(2,5);
+    series->append(3,5);
+    QString title = range+" "+state;
+    make_chart(series, title);
 
 }
 
 
 void MainWindow::on_pushButtonDay_clicked()
 {
-    range="day";
-    ui->rangeText->setText(range);
+    range="Last day";
+    QLineSeries *series = new QLineSeries();
+    series->append(0,0);
+    series->append(1,0);
+    series->append(2,5);
+    series->append(3,5);
+    QString title = range+" "+state;
+    make_chart(series, title);
 
 }
 
 
 void MainWindow::on_pushButtonWeek_clicked()
 {
-    range="week";
-    ui->rangeText->setText(range);
+    range="Last week";
+    QLineSeries *series = new QLineSeries();
+    series->append(0,0);
+    series->append(1,0);
+    series->append(2,5);
+    series->append(3,5);
+    QString title = range+" "+state;
+    make_chart(series, title);
 
 }
 
 
 void MainWindow::on_pushButtonMonth_clicked()
 {
-    range="month";
-    ui->rangeText->setText(range);
+    range="Last month";
     QLineSeries *series = new QLineSeries();
     series->append(0,0);
     series->append(1,0);
