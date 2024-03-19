@@ -84,6 +84,13 @@ void MainWindow::on_pushButtonMonth_clicked()
 {
     range="month";
     ui->rangeText->setText(range);
+    QLineSeries *series = new QLineSeries();
+    series->append(0,0);
+    series->append(1,0);
+    series->append(2,5);
+    series->append(3,5);
+    QString title = range+" "+state;
+    make_chart(series, title);
 
 }
 
