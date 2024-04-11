@@ -740,3 +740,52 @@
 2024-04-11 18:10:27,832 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
 2024-04-11 18:10:27,856 [INFO] ApiDb:448 - Save user favorites file /Users/robert/.stm32cubeide/favorites.mcus.txt: 0 item(s)
 2024-04-11 18:10:27,856 [INFO] ApiDb:452 - User favorites MCUs=[]
+2024-04-11 18:12:27,319 [WARN] IP:2119 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-04-11 18:12:27,321 [WARN] IP:2119 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-04-11 18:12:27,389 [WARN] IP:2119 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-04-11 18:12:27,389 [WARN] IP:2119 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-04-11 18:12:27,390 [WARN] IP:2119 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-04-11 18:12:27,390 [WARN] IP:2119 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-04-11 18:12:27,553 [WARN] IP:2119 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-04-11 18:12:27,553 [WARN] IP:2119 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-04-11 18:12:27,579 [WARN] IP:2119 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-04-11 18:12:27,579 [WARN] IP:2119 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-04-11 18:17:11,911 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 810384392 Bytes (1073741824)
+2024-04-11 18:17:13,833 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 832436072 Bytes (1073741824)
+2024-04-11 18:17:17,796 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 779867512 Bytes (1073741824)
+2024-04-11 18:17:18,157 [INFO] ProjectBuilder:2346 - IP not ready for code generation: Clock
+2024-04-11 18:17:23,815 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-04-11 18:17:23,816 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2024-04-11 18:17:23,816 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-04-11 18:17:23,819 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-04-11 18:17:23,819 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-04-11 18:17:23,819 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-04-11 18:17:23,819 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-04-11 18:17:23,821 [INFO] CodeGenerator:807 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db/
+2024-04-11 18:17:23,839 [WARN] IP:2119 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-04-11 18:17:23,839 [WARN] IP:2119 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-04-11 18:17:23,961 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/robert/FlatMonitor/FlatMonitorFirmware/MXTmpFiles/license.tmp_save
+2024-04-11 18:17:24,078 [INFO] CodeEngine:279 - Generated code: /Users/robert/FlatMonitor/FlatMonitorFirmware/MXTmpFiles/license.tmp
+2024-04-11 18:17:24,152 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/robert/FlatMonitor/FlatMonitorFirmware/MXTmpFiles/gpio.tmp_save
+2024-04-11 18:17:24,247 [INFO] CodeEngine:279 - Generated code: /Users/robert/FlatMonitor/FlatMonitorFirmware/MXTmpFiles/gpio.tmp
+2024-04-11 18:17:24,474 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Src/stm32f1xx_it.c_save
+2024-04-11 18:17:24,651 [INFO] CodeEngine:279 - Generated code: /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Src/stm32f1xx_it.c
+2024-04-11 18:17:24,659 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Inc/stm32f1xx_it.h_save
+2024-04-11 18:17:24,736 [INFO] CodeEngine:279 - Generated code: /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Inc/stm32f1xx_it.h
+2024-04-11 18:17:24,753 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Src/stm32f1xx_hal_msp.c_save
+2024-04-11 18:17:24,885 [INFO] CodeEngine:279 - Generated code: /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Src/stm32f1xx_hal_msp.c
+2024-04-11 18:17:24,887 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/robert/FlatMonitor/FlatMonitorFirmware/MXTmpFiles/system.tmp_save
+2024-04-11 18:17:24,936 [INFO] CodeEngine:279 - Generated code: /Users/robert/FlatMonitor/FlatMonitorFirmware/MXTmpFiles/system.tmp
+2024-04-11 18:17:24,944 [INFO] CodeEngine:311 - oldGeneratedFile, /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Inc/stm32f1xx_hal_conf.h_save
+2024-04-11 18:17:25,004 [INFO] CodeEngine:335 - Generated code: /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Inc/stm32f1xx_hal_conf.h
+2024-04-11 18:17:25,069 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Inc/main.h_save
+2024-04-11 18:17:25,127 [INFO] CodeEngine:279 - Generated code: /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Inc/main.h
+2024-04-11 18:17:25,130 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Src/main.c_save
+2024-04-11 18:17:25,260 [INFO] CodeEngine:279 - Generated code: /Users/robert/FlatMonitor/FlatMonitorFirmware/Core/Src/main.c
+2024-04-11 18:17:25,828 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 125mS.
+2024-04-11 18:17:25,854 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-04-11 18:17:26,226 [INFO] ConfigFileManager:1495 - The Die is : DIE418
+2024-04-11 18:17:28,891 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 3033mS.
+2024-04-11 18:17:28,895 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-04-11 18:17:28,897 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-04-11 18:17:49,817 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 

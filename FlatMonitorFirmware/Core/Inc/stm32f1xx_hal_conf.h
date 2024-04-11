@@ -43,10 +43,10 @@
 /*#define HAL_CRC_MODULE_ENABLED   */
 /*#define HAL_DAC_MODULE_ENABLED   */
 /*#define HAL_DMA_MODULE_ENABLED   */
-/*#define HAL_ETH_MODULE_ENABLED   */
+#define HAL_ETH_MODULE_ENABLED
 /*#define HAL_FLASH_MODULE_ENABLED   */
-/*#define HAL_GPIO_MODULE_ENABLED   */
-/*#define HAL_I2C_MODULE_ENABLED   */
+#define HAL_GPIO_MODULE_ENABLED
+#define HAL_I2C_MODULE_ENABLED
 /*#define HAL_I2S_MODULE_ENABLED   */
 /*#define HAL_IRDA_MODULE_ENABLED   */
 /*#define HAL_IWDG_MODULE_ENABLED   */
@@ -65,7 +65,7 @@
 /*#define HAL_SPI_MODULE_ENABLED   */
 /*#define HAL_SRAM_MODULE_ENABLED   */
 /*#define HAL_TIM_MODULE_ENABLED   */
-/*#define HAL_UART_MODULE_ENABLED   */
+#define HAL_UART_MODULE_ENABLED
 /*#define HAL_USART_MODULE_ENABLED   */
 /*#define HAL_WWDG_MODULE_ENABLED   */
 
@@ -184,8 +184,8 @@
 
 /* Section 2: PHY configuration section */
 
-/* DP83848_PHY_ADDRESS Address*/
-#define DP83848_PHY_ADDRESS           0x01U
+/* LAN8742A_PHY_ADDRESS Address*/
+#define LAN8742A_PHY_ADDRESS           0x1U
 /* PHY Reset delay these values are based on a 1 ms Systick interrupt*/
 #define PHY_RESET_DELAY                 0x000000FFU
 /* PHY Configuration delay */
@@ -219,6 +219,9 @@
 
 #define PHY_SPEED_STATUS                ((uint16_t)0x0002U)  /*!< PHY Speed mask                                  */
 #define PHY_DUPLEX_STATUS               ((uint16_t)0x0004U)  /*!< PHY Duplex mask                                 */
+
+#define PHY_ISFR                        ((uint16_t)0x000BU)    /*!< PHY Interrupt Source Flag register Offset   */
+#define PHY_ISFR_INT4                   ((uint16_t)0x000BU)  /*!< PHY Link down inturrupt       */
 
 /* ################## SPI peripheral configuration ########################## */
 

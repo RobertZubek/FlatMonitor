@@ -2029,7 +2029,7 @@
 		(descr "LGA-8, https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001-18.pdf")
 		(tags "lga land grid array")
 		(property "Reference" "U4"
-			(at 0 -3.1 360)
+			(at 0 -3.1 0)
 			(layer "F.SilkS")
 			(uuid "04c78a12-32aa-4d4c-a904-436b5af74b00")
 			(effects
@@ -2040,7 +2040,7 @@
 			)
 		)
 		(property "Value" "BMP280"
-			(at 0 3.1 360)
+			(at 0 3.1 0)
 			(layer "F.Fab")
 			(uuid "d1fd52a9-8813-43d8-885e-3d55314a960b")
 			(effects
@@ -2264,7 +2264,7 @@
 			(uuid "2a7e95ae-9926-4a26-99a2-c6d46f8a8b89")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "9bb5fd74-2f94-47f4-9b44-25e59d40b3ac")
 			(effects
